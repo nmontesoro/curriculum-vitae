@@ -1,0 +1,126 @@
+\documentclass{article}
+\usepackage[\langsetting]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper, margin={1.5cm, 1.5cm}]{geometry}
+\usepackage{csvsimple}
+\usepackage{hyperref}
+\usepackage[foreign=international]{phonenumbers}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage[final, nolink]{qrcode}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{changepage}
+\usepackage{xcolor}
+\csvstyle{common}{separator=semicolon, head to column names}
+
+\setlength{\parindent}{0cm}
+
+\hypersetup{
+    hidelinks,
+}
+
+\newcommand{\categoryformat}[1]{{\color{darkgray} \footnotesize #1}}
+
+\newcommand{\institutionformat}[1]{{\fontfamily{cmss}\selectfont \textbf{#1}}}
+
+\newcommand{\dateformat}[1]{{\small (#1)}}
+
+\newcommand{\descriptionformat}[1]{
+\begin{adjustwidth}{5mm}{5mm}
+{\small #1}
+\end{adjustwidth}
+}
+
+\newcommand{\commonformat}[4]{
+\vspace{2mm}
+\categoryformat{#1}
+
+\institutionformat{#2} \dateformat{#3}
+
+\descriptionformat{#4}
+}
+
+\newcommand{\skillformat}[3]{
+\vspace{2mm}
+\categoryformat{#1}
+
+\institutionformat{#2}
+
+\descriptionformat{#3}
+}
+
+\newcommand{\readwithcommonformat}[1]{
+\csvreader[common]{#1}{}{
+\commonformat{\shortdesc}{\institution}{\dates}{\description}
+}
+}
+
+\newcommand{\readwithskillformat}[1]{
+\csvreader[common]{#1}{}{
+\skillformat{\category}{\header}{\description}
+}
+}
+
+\renewcommand{\section}[1]{
+\vspace{2mm}
+\begin{center}
+{\fontfamily{cmss}\selectfont \Large \textbf{#1}}
+\end{center}
+}
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+{
+\csvreader[common]{\datapath/personal-info.csv}{}{
+
+\begin{wrapfigure}{r}{50mm}
+    \centering
+    \begin{subfigure}[c]{24mm}
+        \centering
+        \qrcode[height=\textwidth]{
+BEGIN:VCARD\?
+VERSION:3.0\?
+N:\lastname;\firstname\?
+TEL;TYPE=work:\phone\?
+EMAIL:\email\?
+END:VCARD\?
+        }
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[c]{24mm}
+        \centering
+        \includegraphics[width=\textwidth]{data/common/photo.png}
+    \end{subfigure}
+\end{wrapfigure}
+
+{\huge \textbf{\firstname~\lastname}}
+
+\emph{\occupation}
+
+\vspace{5mm}
+\phonenumber{\phone}
+
+\href{mailto:\email}{\email}
+
+\comments
+\newline
+}
+}
+
+
+\section{\titleeducation}
+
+\readwithcommonformat{\datapath/education.csv}
+
+\section{\titleworkexperience}
+
+\readwithcommonformat{\datapath/work-experience.csv}
+
+\section{\titleskills}
+
+\readwithskillformat{\datapath/skills.csv}
+
+\end{document}
