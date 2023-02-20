@@ -1,10 +1,10 @@
 COMMON = cv.tex data/common/photo.png
 
 ROOT-SP = data/sp
-DATA-SP = $(ROOT-SP)/personal-info.csv $(ROOT-SP)/education.csv $(ROOT-SP)/work-experience.csv $(ROOT-SP)/skills.csv
+DATA-SP = $(ROOT-SP)/personal-info.csv $(ROOT-SP)/education.csv $(ROOT-SP)/work-experience.csv $(ROOT-SP)/skills.csv $(ROOT-SP)/projects.csv
 
 ROOT-EN = data/en
-DATA-EN = $(ROOT-EN)/personal-info.csv $(ROOT-EN)/education.csv $(ROOT-EN)/work-experience.csv $(ROOT-EN)/skills.csv
+DATA-EN = $(ROOT-EN)/personal-info.csv $(ROOT-EN)/education.csv $(ROOT-EN)/work-experience.csv $(ROOT-EN)/skills.csv $(ROOT-EN)/projects.csv
 
 all: spanish english clean-aux
 
