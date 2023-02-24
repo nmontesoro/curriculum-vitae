@@ -16,7 +16,7 @@ EMAIL:{self.data["email"]}\?"""
 
         if "links" in self.data:
             for link in self.data["links"]:
-                str_value += f"\nURL;TYPE={link['site']}:{link['url']}"
+                str_value += f"\nURL;TYPE={link['site']}:{link['url']}\?"
 
         str_value += """
 END:VCARD\?
