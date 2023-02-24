@@ -18,9 +18,7 @@ EMAIL:{self.data["email"]}\?"""
             for link in self.data["links"]:
                 str_value += f"\nURL;TYPE={link['site']}:{link['url']}\?"
 
-        str_value += """
-END:VCARD\?
-        """
+        str_value += "\nEND:VCARD\?"
 
         return str_value
 
