@@ -1,4 +1,5 @@
-from . import escape_characters
+def escape_characters(original: str) -> str:
+    return original.replace("&", "\&").replace("%", "\%")
 
 
 class SectionItem:
