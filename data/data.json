@@ -1,0 +1,125 @@
+[
+  {
+    "language": "english",
+    "personal-info": {
+      "name": "Nazareno",
+      "last-name": "Montesoro",
+      "profession": "Software developer",
+      "phone": "+541173678829",
+      "email": "n.montesoro@gmail.com",
+      "location": "Mar del Plata, Argentina",
+      "picture-path": "data/common/photo.png",
+      "show-qr": "true",
+      "links": [
+        {
+          "site": "Github",
+          "display": "nmontesoro",
+          "url": "https://www.github.com/nmontesoro"
+        },
+        {
+          "site": "LinkedIn",
+          "display": "nmontesoro",
+          "url": "https://www.linkedin.com/in/nmontesoro"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "header": "Work experience",
+        "items": [
+          {
+            "short-description": "Junior software developer & IT support",
+            "institution": "Mejor Carne Argentina S.A. (ARG)",
+            "dates": "2017-08/2019-10",
+            "description": [
+              "Developed and maintained administrative software for Raffe and Carnicerías Mar del Plata",
+              "Created software to supervise debit and credit card payments",
+              "Developed programs to manage salaries and generate reports of \\emph{libros de sueldos} to AFIP for over 300 employees",
+              "Provided IT support for an office of more than 15 people"
+            ]
+          },
+          {
+            "short-description": "Barista and busser (part of a Work & Travel experience)",
+            "institution": "Murdock’s Café (part of Vail Resorts, Inc.) and Purple Sage (USA)",
+            "dates": "2019-12/2020-03, 2021-12/2022-03",
+            "description": [
+              "Prepared Starbucks drinks and handled the register, and assisted with cleaning and kitchen duties",
+              "Developed software to manage end-of-day tipouts for all employees -- Received recognition under EpicEmployee program"
+            ]
+          },
+          {
+            "short-description": "Event participation",
+            "institution": "Hackathon MGP (ARG)",
+            "dates": "2022-11-11/12",
+            "description": [
+              "Participated in a 24-hour event with other Engineering students",
+              "Presented a project to automate greenhouses and reduce human intervention in controlling variables such as humidity and temperature -- More info: \\href{http://bit.ly/3iFR98O}{http://bit.ly/3iFR98O} (in Spanish)."
+            ]
+          }
+        ]
+      },
+      {
+        "header": "Education",
+        "items": [
+          {
+            "short-description": "Secondary level",
+            "institution": "Instituto Fray Mamerto Esquiú (ARG)",
+            "dates": "2010/2016",
+            "description": [
+              "High school degree in economics and business administration"
+            ]
+          },
+          {
+            "short-description": "Higher level",
+            "institution": "Facultad de Ingeniería -- Universidad Nacional de Mar del Plata (ARG)",
+            "dates": "ongoing",
+            "description": [
+              "Computer enginnering -- Over 50% progress, including courses such as Structured Programming (C), Algorithms and Data Structures (C) and Object-oriented programming (C++, Java and an introduction to Android development)."
+            ]
+          },
+          {
+            "short-description": "Courses",
+            "institution": "Programming and languages",
+            "description": [
+              "2011 and 2013: Copetel - Aldea Global (ARG) -- PC repair and introduction to programming in Visual Basic .NET",
+              "2014: Winton International (CAN) -- Intensive English, Advanced Level (36 h)",
+              "2015: First Certificate Exam (Cambridge English - GBR) -- Grade A (186/190)",
+              "2016: Olivet English Language School (GBR) -- English Language Programme of Study",
+              "2021: Udemy -- Scrum and Agile Case Studies: Scrum in Real Life Practice (1.5 h)"
+            ]
+          }
+        ]
+      },
+      {
+        "header": "Skills",
+        "items": [
+          {
+            "short-description": "Programming languages and technologies",
+            "institution": "C/C++, Java, Python, Matlab/Octave, Visual FoxPro, Excel VBA, SQL, APIs",
+            "description": [
+              "Proficient in Python, with experience developing bots and scrapers (see \\href{https://github.com/nmontesoro/BoletinOficialUNMDP}{BoletinOficialUNMDP} and \\href{https://github.com/nmontesoro/SIBOM}{SIBOM})",
+              "Knowledgeable in C, C++, Java, Matlab/Octave, and frequently use \\LaTeX",
+              "Experienced with tools such as git, GNU Make, and Doxygen",
+              "Worked with APIs from Twitter and AFIP",
+              "Developed minor projects with Javascript, HTML, and CSS (see \\href{https://github.com/nmontesoro/caapplication}{caapplication})"
+            ]
+          },
+          {
+            "short-description": "Software",
+            "institution": "UNIX, Windows, macOS, Excel, Word, Powerpoint, Photoshop and Illustrator",
+            "description": [
+              "Daily user of Linux, and familiar with Windows and macOS operating systems",
+              "Preferentially uses VSCode or Vim for programming",
+              "Proficient in using Microsoft Office suite",
+              "Experienced with Adobe software."
+            ]
+          },
+          {
+            "short-description": "Languages",
+            "institution": "Spanish (native), English (C2), French (B1) and Portuguese (B1)"
+          }
+        ]
+      }
+    ]
+  }
+]
