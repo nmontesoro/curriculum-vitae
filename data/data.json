@@ -121,5 +121,128 @@
         ]
       }
     ]
+  },
+  {
+    "language": "spanish",
+    "personal-info": {
+      "name": "Nazareno",
+      "last-name": "Montesoro",
+      "profession": "Desarrollador de software",
+      "phone": "+541173678829",
+      "email": "n.montesoro@gmail.com",
+      "location": "Mar del Plata, Argentina",
+      "picture-path": "data/common/photo.png",
+      "show-qr": "true",
+      "links": [
+        {
+          "site": "Github",
+          "display": "nmontesoro",
+          "url": "https://www.github.com/nmontesoro"
+        },
+        {
+          "site": "LinkedIn",
+          "display": "nmontesoro",
+          "url": "https://www.linkedin.com/in/nmontesoro"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "header": "Experiencia laboral",
+        "items": [
+          {
+            "short-description": "Desarrollador de software junior y soporte de TI",
+            "institution": "Mejor Carne Argentina S.A. (ARG)",
+            "dates": "2017-08/2019-10",
+            "description": [
+              "Desarrollo y mantenimiento de software administrativo para Raffe y Carnicerías Mar del Plata",
+              "Creación de software para supervisar pagos con tarjeta de débito y crédito",
+              "Desarrollo de programas para administrar salarios y generar libros de sueldos de AFIP para más de 300 empleados",
+              "Suministro de soporte de TI para una oficina de más de 15 personas"
+            ]
+          },
+          {
+            "short-description": "Barista y busser (parte de una experiencia Work & Travel)",
+            "institution": "Murdock’s Café (parte de Vail Resorts, Inc.) y Purple Sage (USA)",
+            "dates": "2019-12/2020-03, 2021-12/2022-03",
+            "description": [
+              "Preparación de bebidas Starbucks y manejo de la caja registradora, y ayuda con la limpieza y las tareas de cocina",
+              "Desarrollo de software para administrar las propinas de todos los empleados - Reconocido bajo el programa \\textit{EpicEmployee}"
+            ]
+          },
+          {
+            "short-description": "Participación en eventos",
+            "institution": "Hackathon MGP (ARG)",
+            "dates": "2022-11-11/12",
+            "description": [
+              "Participación de un evento de 24 horas con otros estudiantes de ingeniería",
+              "Presentación de un proyecto para automatizar invernaderos y reducir la intervención humana en el control de variables como la humedad y la temperatura - Más información: \\href{http://bit.ly/3iFR98O}{http://bit.ly/3iFR98O}."
+            ]
+          }
+        ]
+      },
+      {
+        "header": "Educación",
+        "items": [
+          {
+            "short-description": "Nivel secundario",
+            "institution": "Instituto Fray Mamerto Esquiú (ARG)",
+            "dates": "2010/2016",
+            "description": [
+              "Bachiller en economía y administración de empresas"
+            ]
+          },
+          {
+            "short-description": "Nivel superior",
+            "institution": "Facultad de Ingeniería -- Universidad Nacional de Mar del Plata (ARG)",
+            "dates": "en curso",
+            "description": [
+              "Ingeniería en Computación -- Más del 50% de progreso, incluyendo materias como Programación Estructurada (C), Algoritmos y Estructuras de Datos (C) y Programación Orientada a Objetos (C++, Java e introducción al desarrollo en Android)."
+            ]
+          },
+          {
+            "short-description": "Cursos",
+            "institution": "Programación e idiomas",
+            "description": [
+              "2011 y 2013: Copetel - Aldea Global (ARG) -- Reparación de PC e introducción a la programación en Visual Basic .NET",
+              "2014: Winton International (CAN) -- \\textit{Intensive English, Advanced Level} (36 h)",
+              "2015: First Certificate Exam (Cambridge English - GBR) -- \\textit{Grade A} (186/190)",
+              "2016: Olivet English Language School (GBR) -- \\textit{English Language Programme of Study}",
+              "2021: Udemy -- \\textit{Scrum and Agile Case Studies: Scrum in Real Life Practice} (1.5 h)"
+            ]
+          }
+        ]
+      },
+      {
+        "header": "Habilidades",
+        "items": [
+          {
+            "short-description": "Lenguajes de programación y tecnologías",
+            "institution": "C/C++, Java, Python, Matlab/Octave, Visual FoxPro, Excel VBA, SQL, APIs",
+            "description": [
+              "Competente en Python, con experiencia en el desarrollo de bots y scrapers (ver \\href{https://github.com/nmontesoro/BoletinOficialUNMDP}{BoletinOficialUNMDP} y \\href{https://github.com/nmontesoro/SIBOM}{SIBOM})",
+              "Conocimientos en C, C++, Java, Matlab/Octave, y uso frecuente de \\LaTeX",
+              "Experiencia con herramientas como git, GNU Make y Doxygen",
+              "He trabajado con APIs de Twitter y AFIP",
+              "He desarrollado proyectos menores con Javascript, HTML y CSS (ver \\href{https://github.com/nmontesoro/caapplication}{caapplication})"
+            ]
+          },
+          {
+            "short-description": "Software",
+            "institution": "UNIX, Windows, macOS, Excel, Word, Powerpoint, Photoshop e Illustrator",
+            "description": [
+              "Usuario diario de Linux, y familiarizado con los sistemas operativos Windows y macOS",
+              "Preferencia por VSCode o Vim para programar",
+              "Competente en el uso de la suite de Microsoft Office",
+              "Experiencia con uso de software Adobe"
+            ]
+          },
+          {
+            "short-description": "Idiomas",
+            "institution": "Español (nativo), Inglés (C2), Francés (B1) y Portugués (B1)"
+          }
+        ]
+      }
+    ]
   }
 ]
