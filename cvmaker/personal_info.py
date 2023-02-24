@@ -20,6 +20,8 @@ EMAIL:{self.data["email"]}\?"""
 
         str_value += "\nEND:VCARD\?"
 
+        str_value = str_value.replace(" ", "\ ")
+
         return str_value
 
     def __str__(self) -> str:
