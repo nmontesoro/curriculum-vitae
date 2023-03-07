@@ -1,29 +1,25 @@
-COMMON = cv.tex data/common/photo.png
+all: english spanish clean-temp
 
-ROOT-SP = data/sp
-DATA-SP = $(ROOT-SP)/personal-info.csv $(ROOT-SP)/education.csv $(ROOT-SP)/work-experience.csv $(ROOT-SP)/skills.csv $(ROOT-SP)/projects.csv
-
-ROOT-EN = data/en
-DATA-EN = $(ROOT-EN)/personal-info.csv $(ROOT-EN)/education.csv $(ROOT-EN)/work-experience.csv $(ROOT-EN)/skills.csv $(ROOT-EN)/projects.csv
-
-all: spanish english clean-aux
-
-.PHONY: spanish
 spanish: spanish.pdf
 
-.PHONY: english
 english: english.pdf
 
-spanish.pdf: $(COMMON) $(DATA-SP)
-	pdflatex spanish.tex
+english.pdf: output/english.tex
+	pdflatex output/english.tex
 
-english.pdf: $(COMMON) $(DATA-EN)
-	pdflatex english.tex
+spanish.pdf: output/spanish.tex
+	pdflatex output/spanish.tex
 
-.PHONY: clean-aux
-clean-aux:
-	$(RM) *.aux *.log *.out
+output/english.tex: data/data.json process.py
+	python3 process.py
+
+output/spanish.tex: data/data.json process.py
+	python3 process.py
+
+.PHONY: clean-temp
+clean-temp:
+	rm -f *.aux *.bak* *.log *.out
 
 .PHONY: clean
-clean: clean-aux
-	$(RM) *.pdf
+clean: clean-temp
+	rm -f *.pdf

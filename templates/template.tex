@@ -1,0 +1,111 @@
+% Margins
+\def \marginside {15mm}
+\def \margintop {7mm}
+
+% Height of QR code and personal info section
+\def \figuresize {30mm}
+\def \headersize {\figuresize}
+
+\documentclass{article}
+
+% Set language
+\usepackage[\langsetting]{babel}
+\usepackage[T1]{fontenc}
+
+% Set paper size and margins
+\usepackage[a4paper, hmargin=\marginside, vmargin=\margintop]{geometry}
+
+% Load other packages
+\usepackage{hyperref} % Links
+\usepackage[foreign=international]{phonenumbers} % Phone number formatting
+\usepackage{graphicx} % Pictures
+\usepackage{wrapfig} % Wraps text outside a figure
+\usepackage[final, nolink]{qrcode} % QR code -- draft for quicker compilation
+%\usepackage{caption}
+%\usepackage{subcaption}
+\usepackage{changepage} % adjustwidth -- set width of descriptions
+\usepackage{xcolor} % Font colors
+\usepackage{enumitem} % To set spacing between list items
+\usepackage{titlesec} % Custom format for section headings
+\usepackage{textpos} % "Reserve" vertical space for personal info
+
+% Sets the spacing between list items
+\setlist[itemize]{leftmargin=*, nosep}
+
+% No indentation on first line (global)
+\setlength\parindent{0pt}
+
+% Sets the width and height of textblocks
+\setlength{\TPHorizModule}{\textwidth}
+\setlength{\TPVertModule}{\headersize}
+
+% Remove page number
+\pagenumbering{gobble}
+
+% Set up link formats
+\hypersetup{
+	hidelinks,
+}
+
+% Set format for headings
+\titleformat
+{\section}
+[display]
+{\bfseries\large\itshape}
+{}
+{0pt}
+{
+	\rule{\textwidth}{1pt}
+	\centering
+}
+[
+	\vspace{-2.5mm}
+	\rule{\textwidth}{0.2pt}
+]
+
+% Set spacing between heading and preceding and following paragraphs
+% left, before, after
+\titlespacing{\section}{0pt}{-3mm}{0mm}
+
+% Format for person's name
+\newcommand{\name}[1]{
+	{\huge \textbf{#1}}
+}
+
+% Format for person's occupation
+\newcommand{\profession}[1]{
+	\emph{#1}
+}
+
+% Format for short description of an item
+\newcommand{\shortdesc}[1]{
+
+	\vspace{0.7mm}
+	{\color{darkgray} \footnotesize #1}
+}
+
+% Format for institution
+\newcommand{\institution}[1]{
+
+	{\fontfamily{cmss}\selectfont \textbf{#1}}
+}
+
+% Format for dates
+\newcommand{\dates}[1]{{\small (#1)}}
+
+% Format for full description of an item
+\newcommand{\fulldesc}[1]{
+	\begin{adjustwidth}{5mm}{5mm}
+		{\small #1}
+	\end{adjustwidth}
+}
+
+% QR Code
+\newcommand{\justqr}[1]
+{
+	\begin{wrapfigure}{r}{\figuresize}
+		\vspace{-7mm}
+		\qrcode[height=\figuresize]{#1}
+	\end{wrapfigure}
+}
+
