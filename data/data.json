@@ -72,14 +72,6 @@
         "header": "Education",
         "items": [
           {
-            "short-description": "Secondary level",
-            "institution": "Instituto Fray Mamerto Esquiú (ARG)",
-            "dates": "2010/2016",
-            "description": [
-              "High school degree in economics and business administration"
-            ]
-          },
-          {
             "short-description": "Higher level",
             "institution": "Facultad de Ingeniería -- Universidad Nacional de Mar del Plata (ARG)",
             "dates": "ongoing",
@@ -203,14 +195,6 @@
       {
         "header": "Educación",
         "items": [
-          {
-            "short-description": "Nivel secundario",
-            "institution": "Instituto Fray Mamerto Esquiú (ARG)",
-            "dates": "2010/2016",
-            "description": [
-              "Bachiller en economía y administración de empresas"
-            ]
-          },
           {
             "short-description": "Nivel superior",
             "institution": "Facultad de Ingeniería -- Universidad Nacional de Mar del Plata (ARG)",
