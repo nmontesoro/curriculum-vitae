@@ -55,7 +55,18 @@
               "Participated in a 24-hour event with other Engineering students",
               "Presented a project to automate greenhouses and reduce human intervention in controlling variables such as humidity and temperature -- More info: \\href{http://bit.ly/3iFR98O}{http://bit.ly/3iFR98O} (in Spanish)."
             ]
+          },
+          {
+            "short-description": "Software developer and technical support provider -- Internship",
+            "institution": "Grupo Veraz (ARG)",
+            "dates": "ongoing -- started on 2023-04-24",
+            "description": [
+                "Collaborating closely with a talented team to develop mission-critical tools using .NET Framework and NodeJS",
+                "Creating reports for an internal fleet and HR management system (GEDEF) using Microsoft SQL Server and SSRS",
+                "Providing technical support, including hardware administration, equipment installation, Active Directory configuration, routers, VPNs, and GSuite tools, to ensure operational efficiency and continuity"
+            ]
           }
+
         ]
       },
       {
@@ -128,7 +139,7 @@
     "personal-info": {
       "name": "Nazareno",
       "last-name": "Montesoro",
-      "profession": "Desarrollador de software",
+      "profession": "Estudiante de Ingeniería en Computación",
       "phone": "+541173678829",
       "email": "n.montesoro@gmail.com",
       "location": "Mar del Plata, Argentina",
@@ -178,6 +189,16 @@
             "description": [
               "Participación de un evento de 24 horas con otros estudiantes de ingeniería",
               "Presentación de un proyecto para automatizar invernaderos y reducir la intervención humana en el control de variables como la humedad y la temperatura - Más información: \\href{http://bit.ly/3iFR98O}{http://bit.ly/3iFR98O}."
+            ]
+          },
+          {
+            "short-description": "Software developer and technical support provider -- Internship",
+            "institution": "Grupo Veraz (ARG)",
+            "dates": "ongoing -- started on 2023-04-24",
+            "description": [
+                "Colaboro con un talentoso equipo para desarrollar herramientas críticas usando .NET Framework y NodeJS",
+                "Creo reportes para un sistema interno de gestión de flota y RRHH (GEDEF) usando Microsoft SQL Server y SSRS",
+                "Proveo soporte técnico, incluyendo administración de hardware, instalación de equipos, configuración de Active Directory, routers, VPNs y herramientas de GSuite, para asegurar eficiencia y continuidad operativa"
             ]
           }
         ]
